@@ -100,7 +100,7 @@ h3,
     margin: 0;
 }
 
-.attribution { font-size: 11px; justify-self: center; margin-bottom: 0; }
+.attribution { font-size: 10px; justify-self: center; margin-bottom: 0; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* buttons */
