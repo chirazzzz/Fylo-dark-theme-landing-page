@@ -26,6 +26,16 @@ ul {
     padding: 0;
 }
 
+.link {
+    color: hsl(0, 0%, 100%);
+}
+
+.link:hover,
+.link:focus {
+    color:  hsl(176, 68%, 64%);
+}
+
+
 /* ==================
     Typography
 ===================== */
@@ -33,39 +43,64 @@ ul {
 h1,
 h2,
 h3,
-h4 {
+.profile-name {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    line-height: 1.4;
 }
 
 .intro-title {
     font-size: 1.8rem;
-    margin: 0 auto 1em;
+    margin: 2em 0 1em;
 }
 
-.info-title {
-    font-size: 1.6rem;
-}
-
-.feature-title {
-    font-size: 1.4rem;
-}
-
-.accent-link {
-    color: hsl(176, 68%, 64%);
-}
-
-.profile-name {
-    font-size: 0.9rem;
-    margin-bottom: 0;
-}
-
-.small-text {
-    font-size: 0.8rem;
+.intro-text {
     margin: 0;
 }
 
-.attribution { font-size: 12px; text-align: center; }
+.info-title,
+.feature-title,
+.sign-in-title {
+    font-size: 1.4rem;
+    margin: 1em 0 0.5em;
+}
+
+.info-title {
+    margin-top: 2em;
+}
+
+.info-text:nth-of-type(2) {
+    margin-top: 0;
+}
+
+.feature-text,
+.sign-in-text {
+    text-align: center;
+    margin-top: 0;
+}
+
+.testimonial-text {
+    font-size: 0.8rem;
+    margin: 0 0 1.5em;
+}
+
+.profile-name {
+    font-size: 0.7rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.profile-text {
+    font-size: 0.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+.attribution { font-size: 12px; justify-self: center; margin-bottom: 0; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* buttons */
@@ -82,6 +117,10 @@ h4 {
     letter-spacing: 0.5px;
     background: hsl(176, 68%, 64%);
     background: linear-gradient(135deg, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 100%);
+    width: 250px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
 }
 
 .btn-primary:hover,
@@ -93,16 +132,62 @@ h4 {
     General layout
 ===================== */
 
-/* navigation */
+.main-grid {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1em;
+    justify-items: center;
+}
+
+main {
+    background: hsl(218, 28%, 13%);
+}
+
+.flex-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 2em 2em;
+}
+
+.footer-grid {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr);
+    grid-gap: 2em;
+    justify-items: start;
+}
+
+/* Navigation */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.5em 1em;
+}
+
+.header-logo {
+    width: 100px;
+}
+
+.nav-list {
+    display: flex;
+}
 
 .nav-link {
-    color: hsl(0, 0%, 100%);
+    margin-left: 1em;
 }
 
 .header,
-.intro {
+.intro,
+.sign-in {
     background: hsl(217, 28%, 15%);
 }
+
+/* Intro */
 
 .intro {
     background-image: url('images/bg-curvy-mobile.svg');
@@ -111,30 +196,140 @@ h4 {
     background-position: bottom;
 }
 
-main {
-    background: hsl(218, 28%, 13%);
+/* Features */
+
+.features {
+    margin-top: 4em;
+}
+
+.feature {
+    display: grid;
+    justify-items: center;
+    margin-top: 4em;
+}
+
+/* Info */
+
+.info {
+    text-align: left;
+    align-items: flex-start;
+    margin: 4em 0 6em;
+}
+
+.accent-link {
+    color: hsl(176, 68%, 64%);
+    padding-bottom: 3px;
+    border-bottom: hsl(176, 68%, 64%) 1px solid;
+}
+
+.accent-link:hover,
+.accent-link:focus {
+    color: hsl(198, 60%, 50%);
+}
+
+.accent-icon {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+}
+
+/* Testimonials */
+
+.testimonials {
+    margin: 0 1em;
+}
+
+.quote-icon {
+    position: relative;
+    height: 20px;
+    justify-self: flex-start;
+    top: 17px;
+    left: 5px;
+    z-index: 1;
 }
 
 .testimonial {
     background: hsl(219, 30%, 18%);
+    border-radius: 5px;
+    padding: 2em;
+    margin-bottom: 1em;
+    z-index: 2;
 }
 
+.profile {
+    display: flex;
+}
+
+.profile-image {
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+/* Sign in */
+
+.sign-in {
+    width: 90%;
+    border-radius: 10px;;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    -webkit-box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.4);
+    box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.4);
+}
+
+/* Footer */
+
 .footer {
+    padding-top: 200px;
     background: hsl(216, 53%, 9%);
 }
 
-/* ==================
-    Form
-===================== */
-
-input {
-    margin-bottom: 0.5em;
-    font-family: inherit;  
+.footer-logo {
+    margin-left: 1em;
 }
 
-input,
-.btn-form {
-    width: 300px;
+.footer-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-info:last-of-type {
+    margin-bottom: 2em;
+}
+
+.icon {
+    margin-right: 1em;
+    position: relative;
+    top: 0.3em;
+}
+
+.footer-social {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    margin: 0 0.2em;
+}
+
+
+/* ==================
+    Sign in form
+===================== */
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    width: 250px;
     padding: 1em 2em;
     border: 0;
     -webkit-border-radius: 100px;
@@ -144,4 +339,6 @@ input,
 
 .btn-form {
     color: hsl(0, 0%, 100%);
+    margin-top: 1em;
+    border: 0;
 }
