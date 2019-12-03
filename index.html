@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header class="header">
-		<a class="logo-link" href="index.html">
+		<a href="index.html">
 			<img src="images/logo.svg" alt="Fylo logo" class="header-logo">
 		</a>
 
@@ -27,7 +27,7 @@
 
 	<main>
 		<section class="intro flex-section">
-			<img src="images/illustration-intro.png" alt="people sharing files">
+			<img class="intro-image" src="images/illustration-intro.png" alt="people sharing files">
 			<h1 class="intro-title">All your files in one secure location, accessible anywhere.</h1>
 			<p class="intro-text">Fylo stores all your most important files in one secure location. Access them wherever
 			you need, share and collaborate with friends family, and co-workers.</p>
@@ -62,13 +62,15 @@
 		</section>
 
 		<section class="info flex-section">
-			<img src="images/illustration-stay-productive.png" alt="people working well as a team">
-			<h2 class="info-title">Stay productive, wherever you are</h2>
-			<p class="info-text">Never let location be an issue when accessing your files. Fylo has you covered for all of your file
-			storage needs.</p>
-			<p class="info-text">Securely share files and folders with friends, family and colleagues for live collaboration.
-			No email attachments required.</p>
-			<a href="#" class="accent-link">See how Fylo works<img class="accent-icon" src="images/icon-arrow.svg" alt="arrow icon"></a>
+			<img class="info-image" src="images/illustration-stay-productive.png" alt="people working well as a team">
+			<div class="info-blurb">
+				<h2 class="info-title">Stay productive, wherever&nbsp;you are</h2>
+				<p class="info-text">Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+				storage needs.</p>
+				<p class="info-text">Securely share files and folders with friends, family and colleagues for live collaboration.
+				No email attachments required.</p>
+				<a href="#" class="accent-link">See how Fylo works<img class="accent-icon" src="images/icon-arrow.svg" alt="arrow icon"></a>
+			</div>
 		</section>
 
 		<section id="testimonials" class="testimonials main-grid">
@@ -99,7 +101,7 @@
 			</div>
 		</section>
 
-		<section id="sign-in" class="sign-in main-grid">
+		<section id="sign-in" class="sign-in">
 			<h3 class="sign-in-title">Get early access today</h3>
 			<p class="sign-in-text">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
 			questions, our support team would be happy to help you.</p>
@@ -110,49 +112,53 @@
 		</section>
 	</main>
 
-	<footer class="footer footer-grid">
-		<a class="logo-link" href="index.html">
-			<img src="images/logo.svg" alt="Fylo logo" class="footer-logo">
-		</a>
-		<div class="footer-info footer-location">
-			<img class="icon" src="images/icon-location.svg" alt="location icon">
-			<p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-			dolore magna aliqua</p>
+	<footer class="footer">
+		<div class="footer-grid">
+			<a href="index.html">
+				<img src="images/logo.svg" alt="Fylo logo" class="footer-logo">
+			</a>
+			
+			<div class="footer-company-info">
+				<div class="footer-info footer-location">
+					<img class="icon icon-location" src="images/icon-location.svg" alt="location icon">
+					<p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua</p>
+				</div>
+				<div class="footer-info footer-phone">
+					<img class="icon" src="images/icon-phone.svg" alt="phone icon">
+					<p class="footer-text">+1-543-123-4567</p>
+				</div>
+				<div class="footer-info footer-email">
+					<img class="icon" src="images/icon-email.svg" alt="email icon">
+					<p class="footer-text">example@fylo.com</p>
+				</div>
+			</div>
+	
+			<ul class="footer-list">
+				<li class="footer-item"><a href="#" class="link footer-link">About Us</a></li>
+				<li class="footer-item"><a href="#" class="link footer-link">Jobs</a></li>
+				<li class="footer-item"><a href="#" class="link footer-link">Press</a></li>
+				<li class="footer-item"><a href="#" class="link footer-link">Blog</a></li>
+			</ul>
+	
+			<ul class="footer-list">
+				<li class="footer-item"><a href="#" class="link footer-link">Contact Us</a></li>
+				<li class="footer-item"><a href="#" class="link footer-link">Terms</a></li>
+				<li class="footer-item"><a href="#" class="link footer-link">Privacy</a></li>
+			</ul>
+	
+			<ul class="footer-social">
+				<li class="social-item"></li><a href="#" class="link social-link fa-stack">
+					<i class="far fa-circle fa-stack-2x icon-background"></i>
+					<i class="fab fa-facebook-f fa-stack-1x"></i></a></li>
+				<li class="social-item"></li><a href="#" class="link social-link fa-stack">
+					<i class="far fa-circle fa-stack-2x icon-background"></i>
+					<i class="fab fa-twitter fa-stack-1x"></i></a></li>
+				<li class="social-item"></li><a href="#" class="link social-link fa-stack">
+					<i class="far fa-circle fa-stack-2x icon-background"></i>
+					<i class="fab fa-instagram fa-stack-1x"></i></a></li>
+			</ul>
 		</div>
-		<div class="footer-info footer-phone">
-			<img class="icon" src="images/icon-phone.svg" alt="phone icon">
-			<p class="footer-text">+1-543-123-4567</p>
-		</div>
-		<div class="footer-info footer-email">
-			<img class="icon" src="images/icon-email.svg" alt="email icon">
-			<p class="footer-text">example@fylo.com</p>
-		</div>
-
-		<ul class="footer-list">
-			<li class="footer-item"><a href="#" class="link footer-link">About Us</a></li>
-			<li class="footer-item"><a href="#" class="link footer-link">Jobs</a></li>
-			<li class="footer-item"><a href="#" class="link footer-link">Press</a></li>
-			<li class="footer-item"><a href="#" class="link footer-link">Blog</a></li>
-		</ul>
-
-		<ul class="footer-list">
-			<li class="footer-item"><a href="#" class="link footer-link">Contact Us</a></li>
-			<li class="footer-item"><a href="#" class="link footer-link">Terms</a></li>
-			<li class="footer-item"><a href="#" class="link footer-link">Privacy</a></li>
-		</ul>
-
-		<ul class="footer-social">
-			<li class="social-item"></li><a href="#" class="link social-link fa-stack">
-				<i class="far fa-circle fa-stack-2x icon-background"></i>
-				<i class="fab fa-facebook-f fa-stack-1x"></i></a></li>
-			<li class="social-item"></li><a href="#" class="link social-link fa-stack">
-				<i class="far fa-circle fa-stack-2x icon-background"></i>
-				<i class="fab fa-twitter fa-stack-1x"></i></a></li>
-			<li class="social-item"></li><a href="#" class="link social-link fa-stack">
-				<i class="far fa-circle fa-stack-2x icon-background"></i>
-				<i class="fab fa-instagram fa-stack-1x"></i></a></li>
-		</ul>
-
 		<p class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="link" target="_blank">Frontend Mentor</a>.  
 			Coded by <a href="https://chirazzzz.github.io/" class="link" target="_blank">Chirag Mehta</a>.
