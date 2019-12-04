@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CRaleway:400,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/221925f81a.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -80,7 +80,7 @@
 				become a well-oiled collaboration machine.</p>
 				<div class="profile">
 					<img class="profile-image" src="images/profile-1.jpg" alt="Satish Patel profile">
-					<p class="profile-name">Satish Patel<br><span class="profile-text">Founder & CEO, Huddle</span></p>
+					<h6 class="profile-name">Satish Patel<br><span class="profile-text">Founder & CEO, Huddle</span></h6>
 				</div>
 			</div>
 			<div class="testimonial">
@@ -88,7 +88,7 @@
 				become a well-oiled collaboration machine.</p>
 				<div class="profile">
 					<img class="profile-image" src="images/profile-2.jpg" alt="Bruce McKenzie profile">
-					<p class="profile-name">Bruce McKenzie<br><span class="profile-text">Founder & CEO, Huddle</span></p>
+					<h6 class="profile-name">Bruce McKenzie<br><span class="profile-text">Founder & CEO, Huddle</span></h6>
 				</div>
 			</div>
 			<div class="testimonial">
@@ -96,7 +96,7 @@
 				become a well-oiled collaboration machine.</p>
 				<div class="profile">
 					<img class="profile-image" src="images/profile-3.jpg" alt="Iva Boyd profile">
-					<p class="profile-name">Iva Boyd<br><span class="profile-text">Founder & CEO, Huddle</span></p>
+					<h6 class="profile-name">Iva Boyd<br><span class="profile-text">Founder & CEO, Huddle</span></h6>
 				</div>
 			</div>
 		</section>
@@ -106,7 +106,7 @@
 			<p class="sign-in-text">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
 			questions, our support team would be happy to help you.</p>
 			<form class="sign-in-form" action="#" method="POST">
-				<input class="email-input" id="email" type="email" aria-labelledby="undefined" placeholder="email@example.com" required>
+				<input class="email-input" id="email" type="email" aria-label="email" placeholder="email@example.com" required>
 				<button class="btn btn-primary btn-form">Get Started For Free</button>
 			</form>
 		</section>
@@ -147,17 +147,20 @@
 				<li class="footer-item"><a href="#" class="link footer-link">Privacy</a></li>
 			</ul>
 	
-			<ul class="footer-social">
-				<li class="social-item"></li><a href="https://www.facebook.com/chirag.uk" class="link social-link fa-stack">
+			<div class="footer-social">
+				<a href="https://www.facebook.com/chirag.uk" class="link social-link fa-stack"><span class="sr-only">Facbook</span>
 					<i class="far fa-circle fa-stack-2x icon-background"></i>
-					<i class="fab fa-facebook-f fa-stack-1x"></i></a></li>
-				<li class="social-item"></li><a href="https://twitter.com/chirag_uk" class="link social-link fa-stack">
+					<i class="fab fa-facebook-f fa-stack-1x"></i>
+				</a>
+				<a href="https://twitter.com/chirag_uk" class="link social-link fa-stack"><span class="sr-only">Twitter</span>
 					<i class="far fa-circle fa-stack-2x icon-background"></i>
-					<i class="fab fa-twitter fa-stack-1x"></i></a></li>
-				<li class="social-item"></li><a href="https://www.instagram.com/chiragm84/" class="link social-link fa-stack">
+					<i class="fab fa-twitter fa-stack-1x"></i>
+				</a>
+				<a href="https://www.instagram.com/chiragm84/" class="link social-link fa-stack"><span class="sr-only">Instagram</span>
 					<i class="far fa-circle fa-stack-2x icon-background"></i>
-					<i class="fab fa-instagram fa-stack-1x"></i></a></li>
-			</ul>
+					<i class="fab fa-instagram fa-stack-1x"></i>
+				</a>
+			</div>
 		</div>
 		<p class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="link" target="_blank">Frontend Mentor</a>.  
