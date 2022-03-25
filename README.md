@@ -1,56 +1,85 @@
-# Frontend Mentor - Fylo landing page with dark theme and features grid
+# Fylo landing page with dark theme and features grid
+
+[Link to live deploy](https://darktheme-page.netlify.app/)
+
+This is landing page with dark theme which I created while following a front-end coding challenge from [Frontend Mentor](https://www.frontendmentor.io). 
+
+
+## Table of contents
+
+- [Running Locally](#running-locally)
+- [Description](#description)
+  - [Challenges](#challenges)
+- [Overview](#overview)
+  - [My Goals](#my-goals)
+  - [Screenshot](#screenshot)
+- [My Process](#my-process)
+  - [Built with](#built-with)
+  - [Work Flow](#work-flow)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+
+## Running Locally
+
+Since this site is made with HTML and CSS it doesn't require any setup or installing NPM modules. Simply clone or fork the repo onto your local machine and open the index.html file using your web browser. It looks great in Chrome, Firefox and Safari!
+
+## Description
+
+My task was to build out the project to the designs inside the `/design` folder. Example below:
 
 ![Design preview for the Fylo landing page with dark theme and features grid challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+The designs are in JPG static format which meant that I needed to use my best judgement for styles such as `font-size`, `padding` and `margin`.
 
-Thanks for checking out this front-end coding challenge.
+There was also a `style-guide.md` file, which provided a color palette and fonts families.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
-**To do these challenges, you need a basic understanding of HTML, CSS and (sometimes) JavaScript.**
+### Challenges
 
-## Where to find everything
+-  Only working from static design files was tough however I was able to perceive differences in spacings and sizes and match the designs perfectly.
+- This was the first site I created fully on my own (I have since created many more!) so thinking about the right way to approach the project was daunting. This also made me feel incredibly satisfied when I was able match the designs.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to. 
+### Future Plans
 
-The designs are in JPG static format. This will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. This should help train your eye to perceive differences in spacings and sizes.
+I want to recreate more challenges using Frontend Mentor to continue advancing my abilities. I'd love to utilise React and Tailwind to create more complex challenges which require more logic, state etc.
 
-If you would like the Sketch file in order to see sizes etc, it is available to download from the challenge page.
+## Overview
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### My goals
 
-There is also a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts.
+The site should:
 
-## Building your project
+- Perfectly match the designs in the `/design` folder on both mobile and desktop screens
+- Look beautiful at any screen size and orientation
 
-Practice using version control by creating your own GitHub repository for this challenge. This has the added benefit of being able to publish the site for free on GitHub Pages. Find out more about GitHub Pages here: [https://pages.github.com](https://pages.github.com).
+### Screenshot
 
-Also, you could try building this project in a team. This is a great way to practice collaborative coding.
+![Screenshot of site](images/Fylo%20landing%20page%20with%20dark%20theme%20and%20features%20grid.png)
 
-## Suggested workflow
+## My process
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Built with
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). This will make it easier to share your code with the community if you need some help. If you're not sure how to do this, [have a read through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to GitHub Pages. If you're not sure how to do this, [read through this guide](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages).
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes that you could create to make reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-## Sharing your solution
+### Work Flow
 
-There are multiple places you can share your solution:
+I looked through the designs to start planning out how I'd tackle the project. This step was crucial to help me think ahead for CSS classes that I could create to make reusable styles.
 
-1. Submit it on the platform so that other users will see your solution on the site. Other users will be able to give you feedback, which could help improve your code for the next project.
-2. Share your repository and live URL in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
-3. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor** including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
+Before adding any styles, I structured my content with HTML. Writing the HTML first helped focus my attention on creating well-structured content. Next I wrote out the base styles for the project, including general content styles, such as `font-family` and `font-size`.
 
-## Giving feedback
+The bulk of the this project involved CSS so I started adding styles to the top of the page and worked my way down. I made sure to only move on to the next section once I was  happy I'd recreated the design.
 
-Feedback is always welcome, so if you have any to give on this challenge please email hi[at]frontendmentor[dot]io.
+### What I learned
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+My biggest takeaway from this project was getting the sense of how far I'd come and what I could build. This was the first big project I worked on alone and I was delighted to recreate the design so closely.
 
-**Have fun building!** 🚀
+I really appreciated the importance of planning instead of jumping into coding. I've detailed my work flow above because I forced myself to be more methodical and it really paid off.
+
+## Author
+
+- LinkedIn - [@chiragmehtauk](https://www.linkedin.com/in/chiragmehtauk/)
+- Twitter - [@chirag_uk](https://twitter.com/chirag_uk)
